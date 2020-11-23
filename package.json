@@ -1,0 +1,27 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aoc-loader": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "jest": "^26.6.3",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valtism/advent-of-code-2020.git"
+  },
+  "keywords": [],
+  "author": "Dan Wood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valtism/advent-of-code-2020/issues"
+  },
+  "homepage": "https://github.com/valtism/advent-of-code-2020#readme"
+}
