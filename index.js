@@ -1,7 +1,7 @@
 const aocLoader = require("aoc-loader");
 require("dotenv").config();
 
-const TEST_DAY = process.argv[2];
+const TEST_DAY = process.argv[2] || 1;
 
 if (!TEST_DAY) {
   throw new Error(
