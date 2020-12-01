@@ -1,5 +1,6 @@
 const aocLoader = require("aoc-loader");
 require("dotenv").config();
+const { performance } = require("perf_hooks");
 
 const TEST_DAY = process.argv[2] || 1;
 
@@ -12,6 +13,11 @@ if (!TEST_DAY) {
 const day = require("./src/day" + TEST_DAY);
 
 aocLoader(2020, TEST_DAY, process.env.AOC_SESSION).then((data) => {
-  console.log(`Part 1: ${day.part1(data)}\n`);
-  console.log(`Part 2: ${day.part2(data)}\n`);
+  const t0 = performance.now();
+  const res1 = day.part1(data);
+  const t1 = performance.now();
+  console.log(`Part 1: ${res1} in ${(t1 - t0).toFixed(2)}ms\n`);
+  const res2 = day.part2(data);
+  const t2 = performance.now();
+  console.log(`Part 2: ${res2} in ${(t2 - t1).toFixed(2)}ms\n`);
 });
