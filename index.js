@@ -1,8 +1,8 @@
-const aocLoader = require("aoc-loader");
 require("dotenv").config();
+const aocLoader = require("aoc-loader");
 const { performance } = require("perf_hooks");
 
-const TEST_DAY = process.argv[2] || 1;
+const TEST_DAY = process.argv[2] || 2;
 
 if (!TEST_DAY) {
   throw new Error(
@@ -17,7 +17,8 @@ aocLoader(2020, TEST_DAY, process.env.AOC_SESSION).then((data) => {
   const res1 = day.part1(data);
   const t1 = performance.now();
   console.log(`Part 1: ${res1} in ${(t1 - t0).toFixed(2)}ms\n`);
-  const res2 = day.part2(data);
   const t2 = performance.now();
-  console.log(`Part 2: ${res2} in ${(t2 - t1).toFixed(2)}ms\n`);
+  const res2 = day.part2(data);
+  const t3 = performance.now();
+  console.log(`Part 2: ${res2} in ${(t3 - t2).toFixed(2)}ms\n`);
 });
