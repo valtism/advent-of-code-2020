@@ -41,7 +41,12 @@ function part2(input) {
   const nums = [...Array(1000).keys()];
   const missing = nums.filter((n) => !ids.includes(n));
 
-  debugger;
+  for (let i = 1; i < missing.length; i++) {
+    const id = missing[i];
+    if (missing[i - 1] !== id - 1 && missing[i + 1] !== id + 1) return id;
+  }
+
+  return -1;
 }
 
 module.exports = { part1, part2 };
