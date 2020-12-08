@@ -44,20 +44,19 @@ function part2(input) {
     return { instruction, n: Number(num) };
   });
 
-  const clone = (obj) => JSON.parse(JSON.stringify(obj));
-
-  const mapped = instructions.map((ins, i, arr) => {
+  for (let i = 0; i < instructions.length; i++) {
+    let ins = instructions[i];
     if (ins.instruction === "jmp") {
-      const newArr = clone(arr);
-      newArr[i].instruction = "nop";
-      return newArr;
-    } else {
-      return arr;
+      ins.instruction = "nop";
+      if (loop(instructions) !== -1) {
+        return loop(instructions);
+      } else {
+        ins.instruction = "jmp";
+      }
     }
-  });
+  }
 
-  const res = mapped.find((map) => loop(map) !== -1);
-  return loop(res)
+  return -1;
 }
 
 function loop(instructions) {
