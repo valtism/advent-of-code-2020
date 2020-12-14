@@ -88,7 +88,6 @@ function part2(input) {
   let hashString = "";
   while (hash(map) !== hashString) {
     hashString = hash(map);
-    console.log(resOccupied(map));
     map = iteratePart2(map);
   }
 
