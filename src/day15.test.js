@@ -31,24 +31,24 @@ test("1.6", () => {
 });
 
 
-test("2.0", () => {
-  expect(day15.part2(input0)).toBe(175594);
-});
-test("2.1", () => {
-  expect(day15.part2(input1)).toBe(2578);
-});
-test("2.2", () => {
-  expect(day15.part2(input2)).toBe(3544142);
-});
-test("2.3", () => {
-  expect(day15.part2(input3)).toBe(261214);
-});
-test("2.4", () => {
-  expect(day15.part2(input4)).toBe(6895259);
-});
-test("2.5", () => {
-  expect(day15.part2(input5)).toBe(18);
-});
-test("2.6", () => {
-  expect(day15.part2(input6)).toBe(362);
-});
+// test("2.0", () => {
+//   expect(day15.part2(input0)).toBe(175594);
+// });
+// test("2.1", () => {
+//   expect(day15.part2(input1)).toBe(2578);
+// });
+// test("2.2", () => {
+//   expect(day15.part2(input2)).toBe(3544142);
+// });
+// test("2.3", () => {
+//   expect(day15.part2(input3)).toBe(261214);
+// });
+// test("2.4", () => {
+//   expect(day15.part2(input4)).toBe(6895259);
+// });
+// test("2.5", () => {
+//   expect(day15.part2(input5)).toBe(18);
+// });
+// test("2.6", () => {
+//   expect(day15.part2(input6)).toBe(362);
+// });
