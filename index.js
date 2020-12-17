@@ -2,7 +2,7 @@ require("dotenv").config();
 const aocLoader = require("aoc-loader");
 const { performance } = require("perf_hooks");
 
-const TEST_DAY = process.argv[2] || 17;
+const TEST_DAY = process.argv[2] || 18;
 
 if (!TEST_DAY) {
   throw new Error(
